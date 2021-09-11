@@ -6,7 +6,8 @@ const Celcout = document.querySelector('Celc');
 const convertbutton = document.querySelector('button');
 
 function convert() {
-    alert('ollaan täällä');
+    let syote = Fahrin.value;
+    Fahrout.textContent = syote;
 }
 
 convertbutton.addEventListener('click', convert);
