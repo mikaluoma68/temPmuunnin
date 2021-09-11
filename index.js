@@ -1,6 +1,12 @@
+
+const Fahrin = document.querySelector('input');
+const Fahrout = document.querySelector('Fahr');
+const Celcout = document.querySelector('Celc');
+
+const convertbutton = document.querySelector('button');
+
 function convert() {
     alert('ollaan täällä');
 }
 
-const button = document.querySelector('button');
-button.addEventListener('click', convert);
+convertbutton.addEventListener('click', convert);
