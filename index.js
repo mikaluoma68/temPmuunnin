@@ -1,7 +1,7 @@
 
 const Fahrin = document.querySelector('input');
-const Fahrout = document.querySelector('Fahr');
-const Celcout = document.querySelector('Celc');
+const Fahrout = document.querySelector('#Fahr');
+const Celcout = document.querySelector('#Celc');
 
 const convertbutton = document.querySelector('button');
 
