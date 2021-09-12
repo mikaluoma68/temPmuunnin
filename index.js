@@ -1,17 +1,21 @@
+const fahrIn = document.getElementById("fahrenheit");
+const celsIn = document.getElementById("celsius");
+const inputs = document.getElementsByClassName("input");
+  
 
-const Fahrin = document.querySelector('input');
-const Fahrout = document.querySelector('#Fahr');
-const Celcout = document.querySelector('#Celc');
+for (let i = 0; i < inputs.length; i++) {
+    let input = inputs[i];
 
-const convertbutton = document.querySelector('button');
+    input.addEventListener("input", function(muunna) {
+        let value = parseFloat(muunna.target.value);
 
-function convert() {
-    let syote = Fahrin.value;
-    Fahrout.textContent = syote;
-
-    var fToCel = (Fahrin.value - 32) * 5 / 9;
-    Celcout.textContent = fToCel;
+        switch (muunna.target.name) {
+            case "celsius":
+                fahrIn.value = (value * 1.8) + 32;
+                break;
+            case "fahrenheit":
+                celsIn.value = (value-32) / 1.8;
+                break;
+        }
+    });
 }
-
-
-convertbutton.addEventListener('click', convert);
